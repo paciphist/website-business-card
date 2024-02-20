@@ -92,6 +92,8 @@ p.danger {
 }
 
 /************ Navbar Css ************/
+
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -103,12 +105,14 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #121212; 
 }
 
 nav.navbar a.navbar-brand {
   width: 9%;
+  color: #fff !important;
 }
+
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -269,7 +273,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  /* background-image: url('./assets/img/logo-beer-king1.png'); */
+  background-color: #FFC90D;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -344,6 +349,53 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
+}
+
+/* Carousel suppliers*/
+
+.suppliers {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.suppliers.bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.suppliers h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.suppliers p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+
+.suppliers-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.suppliers-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
 }
 
 .App {

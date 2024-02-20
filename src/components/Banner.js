@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from '../assets/img/header-img.svg';
+// import headerImg from '../assets/img/header-img.svg';
+// import logo from '../assets/img/logo-beer-king.jpg';
+import barrelbeer from '../assets/img/barrel-beer.png';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -20,7 +22,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  });
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -62,7 +64,8 @@ export const Banner = () => {
             </h1>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header Img" />
+            <img src={barrelbeer} alt="Header Img" />
+            {/* <img src={logo} alt="logo" /> */}
           </Col>
         </Row>
       </Container>
