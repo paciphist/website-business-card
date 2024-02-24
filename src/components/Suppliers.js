@@ -34,7 +34,7 @@ export const Suppliers = () => {
         <Row>
           <Col>
             <div className="suppliers-bx">
-              <h2>Наші постачальник</h2>
+              <h2>Наші партнери</h2>
               <p>Відкрити до співпраці</p>
               <Carousel
                 responsive={responsive}
