@@ -30,6 +30,41 @@ export const Suppliers = () => {
 
   return (
     <section className="suppliers" id="suppliers">
+      {/* <div className="container">
+        <div className="col-12">
+          <div className="suppliers-bx wow zoomIn">
+            <h2>Наші партнери</h2>
+            <p>Відкрити до співпраці</p>
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              className="owl-carousel owl-theme skill-slider"
+            >
+              <div className="item">
+                <img src={chernigivske} alt="chernigivske" />
+                <h5>Чернігівське</h5>
+              </div>
+              <div className="item">
+                <img src={waissburg} alt="waissburg" />
+                <h5>Waissburg</h5>
+              </div>
+              <div className="item">
+                <img src={lvivske} alt="lvivske" />
+                <h5>Львьвське</h5>
+              </div>
+              <div className="item">
+                <img src={ukrkeg} alt="ukrkeg" />
+                <h5>УкрКег</h5>
+              </div>
+              <div className="item">
+                <img src={zlatobeer} alt="zlatobeer" />
+                <h5>ZlatoBeer</h5>
+              </div>
+            </Carousel>
+          </div>
+        </div>
+      </div> */}
+
       <Container>
         <Row>
           <Col>

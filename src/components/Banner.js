@@ -4,20 +4,26 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 // import headerImg from '../assets/img/header-img.svg';
 // import logo from '../assets/img/logo-beer-king.jpg';
 import barrelbeer from '../assets/img/barrel-beer.png';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = ['Напої', 'Закуски'];
+  const [index, setIndex] = useState(1);
+  const toRotate = ['Напої', 'Закуски', 'Вино'];
   const period = 2000;
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+    let ticker = setInterval(
+      () => {
+        tick();
+      },
+      delta,
+      index
+    );
 
     return () => {
       clearInterval(ticker);
@@ -39,11 +45,15 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
+      setIndex(1);
       setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
     }
   };
 
@@ -52,20 +62,51 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Вітаю в BeerKing</span>
-            <h1>
-              {`Живе пиво `}
-              <span className="wrap">{text}</span>
-              <p>Тут щось буде....</p>
-              <button onClick={() => console.log('connect')}>
-                Приєднатися
-                <ArrowRightCircle size={25} />
-              </button>
-            </h1>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? 'animate__animated animate__fadeIn' : ''
+                  }
+                >
+                  <span className="tagline">Вітаю в BeerKing</span>
+                  <h1>
+                    {`Живе пиво `}
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[
+                      "Закуски", "Напої" "Вино"]'
+                    >
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                  <button onClick={() => console.log('connect')}>
+                    Наливаємо <ArrowRightCircle size={25} />
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={barrelbeer} alt="Header Img" />
-            {/* <img src={logo} alt="logo" /> */}
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? 'animate__animated animate__zoomIn' : ''
+                  }
+                >
+                  <img src={barrelbeer} alt="Header Img" />
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
