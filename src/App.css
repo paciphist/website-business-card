@@ -113,6 +113,11 @@ nav.navbar a.navbar-brand {
   color: #fff !important;
 }
 
+img.navbar-logo {
+  width: auto;
+  height: 24px;
+  margin: 0 8px 8px 8px;
+}
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -272,19 +277,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  /* background-image: url('./assets/img/logo-beer-king1.png'); */
-  background-color: #FFC90D;
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 260px 0 100px 0; 
+  background-color: gold;
+  border-bottom: #121212 solid 2px;
 }
 
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  padding: 8px 10px;  
+  background: rgb(15, 15, 15);
+  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 5%, rgba(163, 161, 147, 1) 91%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -356,10 +359,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .suppliers {
   padding: 0 0 50px 0;
   position: relative;
+    
 }
 
 .suppliers.bx {
-  background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -403,18 +406,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .beers {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-image: url('./assets/img/bg-brick4.jpg');
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 .beers h2 {
   font-size: 45px;
   font-weight: 700;
-  text-align: center;
+  text-align: center; 
+  -webkit-text-stroke: 2px #2c2c2c;
 }
 
-.beers p {
-  color: #B8B8B8;
-  font-size: 18px;
+.beers h3 {
+  color: #121212;
+  font-weight: 700;
+  font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
@@ -438,11 +446,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
-  color: #fff;
+  color: #ffff;
   width: 100%;
   font-size: 17px;
   letter-spacing: 0.8px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   transition: 0.3s ease-in-out;
   text-align: center;
@@ -454,7 +462,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: rgb(15, 15, 15);
+  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 5%, rgba(163, 161, 147, 1) 91%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -466,21 +475,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .beers .nav.nav-pills .nav-link.active {
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid #2c2c2c;
 }
 
 .nav-link#beers-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid #2c2c2c;
   border-radius: 55px 0px 0px 55px;
 }
 
 .nav-link#beers-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid #2c2c2c;
+  border-bottom: 2px solid #2c2c2c;
 }
 
 .nav-link#beers-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid #2c2c2c;
   border-radius: 0 55px 55px 0;
 }
 
@@ -493,7 +502,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .beer-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: rgb(15, 15, 15);
+  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 22%, rgba(163, 161, 147, 1) 100%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -514,6 +524,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  color: #fff;
 }
 
 .beer-imgbx:hover .beer-txtx {
@@ -545,8 +556,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Contact */
-.contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+.contact { 
+  background: gold;
   padding: 60px 0 200px 0;
 }
 
@@ -633,11 +644,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 0 0 50px 0;  
+  background: rgb(19, 19, 19);
 }
 
 .newsletter-bx {
@@ -667,7 +675,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: rgb(19, 19, 19);  
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -699,7 +707,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: rgb(15, 15, 15);
+  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 5%, rgba(163, 161, 147, 1) 91%);
   padding: 20px 11px;
   /* width: 50%; */
   text-align: center;
@@ -707,10 +716,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
-}
-
-.footer img {
-  width: 26%;
 }
 
 .footer p {

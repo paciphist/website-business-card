@@ -1,17 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { BeerCard } from '../components/BeerCard';
-import beerImg1 from '../assets/img/beer-img1.png';
-import beerImg2 from '../assets/img/beer-img2.png';
-import beerImg3 from '../assets/img/beer-img3.png';
-import beerImg4 from '../assets/img/beer-img4.png';
-import colorSharp2 from '../assets/img/color-sharp2.png';
+import beerImg1 from '../assets/img/white-beer1.png';
+import beerImg2 from '../assets/img/white-beer2.png';
+import beerImg3 from '../assets/img/dark-beer3.png';
+import beerImg4 from '../assets/img/dark-beer3.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Beers = () => {
   const beers = [
     {
-      title: 'Світле фільтроване',
+      title: 'Чеський Лагер',
       description: 'Світле фільтроване пастерезоване',
       imgUrl: beerImg1,
     },
@@ -54,8 +53,8 @@ export const Beers = () => {
                     isVisible ? 'animate__animated animate__fadeIn' : ''
                   }
                 >
-                  <h2>Сорта пива</h2>
-                  <p>Наш асортимент</p>
+                  <h2>Продукція</h2>
+                  <h3>Наш асортимент</h3>
                   <Tab.Container id="beers-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -95,11 +94,6 @@ export const Beers = () => {
           </Col>
         </Row>
       </Container>
-      <img
-        className="background-image-right"
-        src={colorSharp2}
-        alt="background right"
-      />
     </section>
   );
 };

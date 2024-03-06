@@ -35,7 +35,7 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             BEERKING
-            <img src={logo1} alt="logo" width="24" height="24" />
+            <img className="navbar-logo" src={logo1} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -52,6 +52,15 @@ export const NavBar = () => {
                 Головна
               </Nav.Link>
               <Nav.Link
+                href="#beers"
+                className={
+                  activeLink === 'beers' ? 'active navbar-link' : 'navbar-link'
+                }
+                onClick={() => onUpdateActiveLink('beers')}
+              >
+                Продукція
+              </Nav.Link>
+              <Nav.Link
                 href="#suppliers"
                 className={
                   activeLink === 'suppliers'
@@ -61,15 +70,6 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink('suppliers')}
               >
                 Наші партнери
-              </Nav.Link>
-              <Nav.Link
-                href="#beers"
-                className={
-                  activeLink === 'beers' ? 'active navbar-link' : 'navbar-link'
-                }
-                onClick={() => onUpdateActiveLink('beers')}
-              >
-                Сорта Пива
               </Nav.Link>
             </Nav>
             <span className="navbar-text">

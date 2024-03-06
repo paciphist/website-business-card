@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-// import headerImg from '../assets/img/header-img.svg';
-// import logo from '../assets/img/logo-beer-king.jpg';
 import barrelbeer from '../assets/img/barrel-beer.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
