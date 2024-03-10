@@ -434,7 +434,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  /* background-color: rgb(255 255 255 / 10%); */
   overflow: hidden;
 }
 
@@ -474,22 +474,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100% !important;
 }
 
-.beers .nav.nav-pills .nav-link.active {
-  border: 1px solid #2c2c2c;
-}
-
 .nav-link#beers-tabs-tab-first {
-  border: 2px solid #2c2c2c;
+  border: 3px solid #2c2c2c;
   border-radius: 55px 0px 0px 55px;
 }
 
 .nav-link#beers-tabs-tab-second {
-  border-top: 2px solid #2c2c2c;
-  border-bottom: 2px solid #2c2c2c;
+  border-top: 3px solid #2c2c2c;
+  border-bottom: 3px solid #2c2c2c;
 }
 
 .nav-link#beers-tabs-tab-third {
-  border: 2px solid #2c2c2c;
+  border: 3px solid #2c2c2c;
   border-radius: 0 55px 55px 0;
 }
 
