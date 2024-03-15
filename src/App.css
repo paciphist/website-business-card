@@ -359,6 +359,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .suppliers {
   padding: 0 0 50px 0;
   position: relative;
+  background-image: url('./assets/img/bg-brick4.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
@@ -406,7 +410,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .beers {
   padding: 80px 0;
   position: relative;
-  background-image: url('./assets/img/bg-brick4.jpg');
+  background-image: url('./assets/img/black-brick1.jpg');
   background-position: center center; 
   background-size: cover; 
   background-repeat: no-repeat;
@@ -434,8 +438,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  /* background-color: rgb(255 255 255 / 10%); */
   overflow: hidden;
+  
 }
 
 .beers .nav.nav-pills .nav-item {
@@ -468,6 +472,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+
 }
 
 .beers .nav.nav-pills .nav-link.active::before {

@@ -1,9 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { BeerCard } from '../components/BeerCard';
-import beerImg1 from '../assets/img/white-beer1.png';
-import beerImg2 from '../assets/img/white-beer2.png';
-import beerImg3 from '../assets/img/dark-beer3.png';
-import beerImg4 from '../assets/img/dark-beer3.png';
+import beerImg1 from '../assets/img/ch-lager.png';
+import beerImg2 from '../assets/img/ch-blanc.png';
+import beerImg3 from '../assets/img/dark-beer12.png';
+import beerImg4 from '../assets/img/dark-beer11.png';
 import cyderImg1 from '../assets/img/fragolino1.png';
 import cyderImg2 from '../assets/img/lisova-yahodа.png';
 import cyderImg4 from '../assets/img/manho-persyk.png';
