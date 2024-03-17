@@ -7,6 +7,7 @@ import chernigivske from '../assets/img/hernigivske.png';
 import waissburg from '../assets/img/waissburg.png';
 import zlatobeer from '../assets/img/zlatobeer.png';
 import ukrkeg from '../assets/img/ukrkeg.png';
+import slavutapivzavod from '../assets/img/slavuta-pivzavod.png';
 import berdichiv from '../assets/img/berdichiv.jpg';
 import umanbeer from '../assets/img/umanbeer.jpg';
 import podilske from '../assets/img/podilske.jpg';
@@ -60,6 +61,10 @@ export const Suppliers = () => {
                 <div className="item">
                   <img src={lvivske} alt="vivske" />
                   <h5>Львьвське</h5>
+                </div>
+                <div className="item">
+                  <img src={slavutapivzavod} alt="slavutapivzavod" />
+                  <h5>Славута Пивзавод</h5>
                 </div>
                 <div className="item">
                   <img src={ukrkeg} alt="ukrkeg" />

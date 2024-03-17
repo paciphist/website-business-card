@@ -411,10 +411,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 0;
   position: relative;
   background-image: url('./assets/img/black-brick1.jpg');
-  background-position: center center; 
-  background-size: cover; 
-  background-repeat: no-repeat;
-}
+ }
 
 .beers h2 {
   font-size: 45px;
@@ -424,7 +421,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .beers h3 {
-  color: #121212;
+  color: #fff;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.8px;
@@ -499,6 +496,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+ 
+    
 }
 
 .beer-imgbx::before {
@@ -526,7 +525,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
   color: #fff;
-}
+ }
 
 .beer-imgbx:hover .beer-txtx {
   top: 50%;
