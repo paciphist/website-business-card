@@ -7,7 +7,7 @@ export const BeerCard = ({ title, description, imgUrl }) => {
         <img src={imgUrl} alt="beer card" />
         <div className="beer-txtx">
           <h4>{title}</h4>
-          <span>{description}</span>
+          <p className="discr">{description}</p>
         </div>
       </div>
     </Col>

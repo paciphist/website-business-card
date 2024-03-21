@@ -283,12 +283,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .tagline {
+  color: yellow;
+  background: black;    
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;  
-  background: rgb(15, 15, 15);
-  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 5%, rgba(163, 161, 147, 1) 91%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -301,24 +300,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: black;
 }
 
-.banner p {
-  color: #B8B8B8;
+.banner ul {
+  list-style: none;
+ 
+  text-align: center;
+}
+
+.banner li {
+  padding-bottom: 15px;
+  color: black;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
 }
 
+.banner li:last-child{
+  padding-bottom: 0;
+}
+ 
 .banner button {
-  color: #fff;
+  color: black;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+}
+
+.banner button:hover,
+.banner button:focus {
+  color: #fff;
 }
 
 .banner button svg {
@@ -330,6 +345,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner button:hover svg {
   margin-left: 25px;
+}
+
+.adress {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  padding-left: 10px;
+}
+
+.adress:hover,
+.adress:focus {
+  color: #fff;
+ 
 }
 
 .banner img {
@@ -350,59 +380,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+.txt-rotate {
+ -webkit-text-stroke: 1px black; 
+ color: yellow;
+ }  
+
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
-}
-
-/* Carousel suppliers*/
-
-.suppliers {
-  padding: 0 0 50px 0;
-  position: relative;
-  background-image: url('./assets/img/bg-brick4.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.suppliers.bx {
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
-}
-
-.suppliers h2 {
-  font-size: 45px;
-  font-weight: 700;
-}
-
-.suppliers p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px 0 75px 0;
-}
-
-.suppliers-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.suppliers-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
 }
 
 /* Beers */
@@ -411,6 +395,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 0;
   position: relative;
   background-image: url('./assets/img/black-brick1.jpg');
+  border-bottom: #121212 solid 2px;
  }
 
 .beers h2 {
@@ -435,8 +420,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
 
 .beers .nav.nav-pills .nav-item {
@@ -495,9 +479,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
- 
-    
+  margin-bottom: 24px;    
 }
 
 .beer-imgbx::before {
@@ -508,7 +490,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 100%;
   height: 0;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;  
 }
 
 .beer-imgbx:hover::before {
@@ -533,25 +515,76 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .beer-txtx h4 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  -webkit-text-stroke: 2px #2c2c2c;
 }
 
-.beer-txtx span {
+.discr {
+  position: relative;
+  overflow: auto;
+  max-height: 150px;
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
+  font-size: 18px;
+  letter-spacing: 0.8px; 
+  text-align: start;
+  padding: 0 20px 0 20px;  
+  text-indent: 1em;
 }
 
-.background-image-right {
-  top: 20%;
+/* Carousel suppliers*/
+
+.suppliers {
+  padding: 0 0 50px 0;
+  position: relative;
+  background-image: url('./assets/img/bg-brick4.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: #121212 solid 2px;
+}
+
+.suppliers.bx {
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.suppliers h2 {
+  font-size: 45px;
+  font-weight: 700;
+  -webkit-text-stroke: 2px #2c2c2c;
+}
+
+.suppliers p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+
+.suppliers-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.suppliers-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.background-image-left {
+  top: 28%;
   position: absolute;
   bottom: 0;
-  width: 35%;
-  right: 0;
+  width: 40%;
   z-index: -4;
 }
 
@@ -569,6 +602,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 30px;
+  color: #121212;
 }
 
 .contact form input,
@@ -577,10 +611,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  color: #fff;
+  color: #fff;  
   margin: 0 0 8px 0;
   padding: 18px 26px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
@@ -596,7 +630,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #121212;
 }
 
 .contact form input:focus::placeholder,

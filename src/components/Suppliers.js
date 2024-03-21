@@ -3,15 +3,15 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import royalfruit from '../assets/img/royalfruit.jpg';
 import lvivske from '../assets/img/lvivske.png';
-import chernigivske from '../assets/img/hernigivske.png';
+import chernigivske from '../assets/img/Chernigivske.png';
 import waissburg from '../assets/img/waissburg.png';
 import zlatobeer from '../assets/img/zlatobeer.png';
-import ukrkeg from '../assets/img/ukrkeg.png';
 import slavutapivzavod from '../assets/img/slavuta-pivzavod.png';
 import berdichiv from '../assets/img/berdichiv.jpg';
 import umanbeer from '../assets/img/umanbeer.jpg';
 import podilske from '../assets/img/podilske.jpg';
-import carlsberg from '../assets/img/carlsberg.png';
+import carlsberg from '../assets/img/carls.png';
+import khelpivo from '../assets/img/khmel-pivo.png';
 
 export const Suppliers = () => {
   const responsive = {
@@ -67,7 +67,7 @@ export const Suppliers = () => {
                   <h5>Славута Пивзавод</h5>
                 </div>
                 <div className="item">
-                  <img src={ukrkeg} alt="ukrkeg" />
+                  <img src={khelpivo} alt="ukrkeg" />
                   <h5>УкрКег</h5>
                 </div>
                 <div className="item">
