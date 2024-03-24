@@ -1,8 +1,8 @@
-import cyderImg1 from './assets/img/fragolino.png';
-import cyderImg2 from './assets/img/wildberry.png';
-import cyderImg3 from './assets/img/grikh.png';
-import cyderImg4 from './assets/img/mango.png';
-// import cyderImg5 from './assets/img/zbiten.jpg';
+import cyderImg1 from '../assets/img/fragolino.png';
+import cyderImg2 from '../assets/img/wildberry.png';
+import cyderImg3 from '../assets/img/grikh.png';
+import cyderImg4 from '../assets/img/mango.png';
+//import cyderImg5 from '../assets/img/zbiten1.png';
 
 export const cyders = [
   {
@@ -29,10 +29,10 @@ export const cyders = [
       'Напій має приємний свіжий смак, в якому приємна яблучна кислинка ідеально поєднується з екзотичною насолодою манго і персика. Міцність: 5%. Виробник: м.Золотоноша, Royal Fruit Garden',
     imgUrl: cyderImg4,
   },
-  //   {
-  //     title: 'Збітень',
-  //     description:
-  //       'Це солодкий медовий напій, основним компонентом якогоє мед. Крім того, для його приготування використовували воду, різні прянощі та трави, в тому числі лякарські. Міцність: 5%. Виробник: м.Золотоноша, Royal Fruit Garden',
-  //     imgUrl: cyderImg5,
-  //   },
+  // {
+  //   title: 'Збітень',
+  //   description:
+  //     'Це солодкий медовий напій, основним компонентом якогоє мед. Крім того, для його приготування використовували воду, різні прянощі та трави, в тому числі лякарські. Міцність: 5%. Виробник: м.Золотоноша, Royal Fruit Garden',
+  //   imgUrl: cyderImg5,
+  // },
 ];

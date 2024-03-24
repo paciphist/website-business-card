@@ -1,7 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { BeerCard } from './BeerCard';
-import { beers } from '../beers';
-import { cyders } from '../cyders';
+import { beers } from '../products/beers';
+import { cyders } from '../products/cyders';
+import { wines } from '../products/wines';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -56,7 +57,13 @@ export const Products = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">33</Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {wines.map((wine, index) => {
+                            return <BeerCard key={index} {...wine} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
                 </div>

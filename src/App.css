@@ -101,6 +101,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+  /* border-bottom: 1px solid #121212; */
 }
 
 nav.navbar.scrolled {
@@ -120,11 +121,11 @@ img.navbar-logo {
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
+  font-weight: 500;
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.75;
 }
 
@@ -277,20 +278,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0; 
+  padding: 240px 0 100px 0; 
   background-color: gold;
-  border-bottom: #121212 solid 2px;
+  /* background-image: url('./assets/img/bg-brick4.jpg'); */
+    border-bottom: #121212 solid 2px;
+  
 }
 
-.banner .tagline {
-  color: yellow;
-  background: black;    
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;  
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
+.logo-img {
+  width: 250px;
+  height: auto;  
 }
 
 .banner h1 {
@@ -300,21 +297,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
-  color: black;
+  color: #121212;
 }
 
 .banner ul {
-  list-style: none;
- 
+  list-style: none; 
   text-align: center;
 }
 
 .banner li {
-  padding-bottom: 15px;
-  color: black;
+  padding-bottom: 15px; 
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
+  font-weight: 700;  
+  color: #121212;
+    
+}
+
+.banner li:nth-child(2):hover,
+.banner li:nth-child(2):focus,
+.banner li:nth-child(3):hover,
+.banner li:nth-child(3):focus {
+  color: #fff;
+  cursor: pointer;
 }
 
 .banner li:last-child{
@@ -322,7 +328,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
  
 .banner button {
-  color: black;
+  color: #121212;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -348,7 +354,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .adress {
-  color: black;
+  color: #121212;
   text-decoration: none;
   font-size: 22px;
   letter-spacing: 0.8px;
@@ -362,7 +368,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
  
 }
 
-.banner img {
+.banner .header-img {
   animation: updown 3s linear infinite;
 }
 
@@ -381,8 +387,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .txt-rotate {
- -webkit-text-stroke: 1px black; 
- color: yellow;
+ -webkit-text-stroke: 2px #b97f02; 
+ color: #585757;
  }  
 
 .txt-rotate>.wrap {
@@ -641,7 +647,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact form button {
   font-weight: 700;
-  color: #000;
+  color: #121212;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
@@ -681,6 +687,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;  
   background: rgb(19, 19, 19);
 }
+
 
 .newsletter-bx {
   background: #FFFFFF;

@@ -1,14 +1,14 @@
-import beerImg1 from './assets/img/ch-lager.png';
-import beerImg2 from './assets/img/chblanc.png';
-import beerImg3 from './assets/img/dunkel.png';
-import beerImg4 from './assets/img/khmelevus.png';
-import beerImg5 from './assets/img/khmelpivo.png';
-import beerImg6 from './assets/img/umanpivo.png';
-import beerImg7 from './assets/img/kronen.png';
-import beerImg8 from './assets/img/pils.png';
-import beerImg9 from './assets/img/satoshi.png';
-import beerImg10 from './assets/img/rizdvyne.png';
-import beerImg11 from './assets/img/sangushko.png';
+import beerImg1 from '../assets/img/ch-lager.png';
+import beerImg2 from '../assets/img/chblanc.png';
+import beerImg3 from '../assets/img/dunkel.png';
+import beerImg4 from '../assets/img/khmelevus.png';
+import beerImg5 from '../assets/img/khmelpivo.png';
+import beerImg6 from '../assets/img/umanpivo.png';
+import beerImg7 from '../assets/img/kronen.png';
+import beerImg8 from '../assets/img/pils.png';
+import beerImg9 from '../assets/img/satoshi.png';
+import beerImg10 from '../assets/img/rizdvyne.png';
+import beerImg11 from '../assets/img/sangushko.png';
 
 export const beers = [
   {

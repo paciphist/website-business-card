@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import {
+  ArrowRightCircle,
+  TelephoneFill,
+  Calendar2,
+} from 'react-bootstrap-icons';
 import barrelbeer from '../assets/img/barrel-beer.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-
+import logobeerking from '../assets/img/logo-beerking1.png';
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -67,7 +71,7 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__fadeIn' : ''
                   }
                 >
-                  <span className="tagline">Вітаю в BeerKing</span>
+                  <img className="logo-img" src={logobeerking} alt="logo" />
                   <h1>
                     {`Живе пиво `}
                     <span
@@ -87,11 +91,20 @@ export const Banner = () => {
                         та лимонадів. Смаколики до напоїв, м'ясні, рибні, сирні,
                         снеки.
                       </li>
-                      <li>Телефон: +380 11 22 33 444</li>
-                      <li> Працюємо: з 11-00 до 22-00</li>
+                      <li>
+                        <TelephoneFill
+                          size={24}
+                          style={{ paddingRight: '5px' }}
+                        />
+                        +380 11 22 33 444
+                      </li>
+                      <li>
+                        {' '}
+                        <Calendar2 size={24} style={{ paddingRight: '5px' }} />
+                        11:00 - 22:00
+                      </li>
                     </ul>
                   </div>
-
                   <button onClick={() => console.log('connect')}>
                     Наливаємо за адресою:
                     <ArrowRightCircle size={30} />
@@ -116,7 +129,11 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__zoomIn' : ''
                   }
                 >
-                  <img src={barrelbeer} alt="Header Img" />
+                  <img
+                    className="header-img"
+                    src={barrelbeer}
+                    alt="Header Img"
+                  />
                 </div>
               )}
             </TrackVisibility>
