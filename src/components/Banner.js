@@ -6,9 +6,13 @@ import {
   Calendar2,
 } from 'react-bootstrap-icons';
 import barrelbeer from '../assets/img/barrel-beer.png';
+import fish from '../assets/img/fish.svg';
+import chips from '../assets/img/chips.svg';
+import popcorn from '../assets/img/popcorn.svg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import logobeerking from '../assets/img/logo-beerking1.png';
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -90,6 +94,27 @@ export const Banner = () => {
                         Крамниця розливного живого крафтового пива, сидра, вина
                         та лимонадів. Смаколики до напоїв, м'ясні, рибні, сирні,
                         снеки.
+                      </li>
+                      <li>
+                        <Row className="align-items-center">
+                          <Col xs={12} md={6} xl={7}>
+                            <img
+                              className="banner-icons"
+                              src={fish}
+                              alt="icon fish"
+                            />
+                            <img
+                              className="banner-icons"
+                              src={chips}
+                              alt="icon chips"
+                            />
+                            <img
+                              className="banner-icons"
+                              src={popcorn}
+                              alt="icon popcorn"
+                            />
+                          </Col>
+                        </Row>
                       </li>
                       <li>
                         <TelephoneFill

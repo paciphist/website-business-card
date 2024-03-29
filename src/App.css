@@ -279,10 +279,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 240px 0 100px 0; 
-  background-color: gold;
-  /* background-image: url('./assets/img/bg-brick4.jpg'); */
-    border-bottom: #121212 solid 2px;
-  
+  background-color: gold; 
+  border-bottom: #121212 solid 2px;  
 }
 
 .logo-img {
@@ -325,6 +323,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner li:last-child{
   padding-bottom: 0;
+}
+
+.banner-icons {
+  height: 32px;
+  width: 32px;
 }
  
 .banner button {

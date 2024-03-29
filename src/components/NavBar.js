@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo1 from '../assets/img/logo1.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
+import telegram from '../assets/img/telegram.svg';
+import viber from '../assets/img/viber.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -75,18 +75,19 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a
-                  href="https://www.linkedin.com/feed/"
+                  href="https://web.telegram.org/k/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={navIcon1} alt="linkedin" />
+                  <img src={telegram} alt="telegram" />
                 </a>
+
                 <a
-                  href="https://uk-ua.facebook.com/"
+                  href="https://www.viber.com/ua/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={navIcon2} alt="facebook" />
+                  <img src={viber} alt="viber" />
                 </a>
                 <a
                   href="https://www.instagram.com/"
