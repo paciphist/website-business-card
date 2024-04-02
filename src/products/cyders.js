@@ -2,7 +2,7 @@ import cyderImg1 from '../assets/img/fragolino.png';
 import cyderImg2 from '../assets/img/wildberry.png';
 import cyderImg3 from '../assets/img/grikh.png';
 import cyderImg4 from '../assets/img/mango.png';
-import cyderImg5 from '../assets/img/zbiten.png';
+import cyderImg5 from '../assets/img/zbiten2.png';
 
 export const cyders = [
   {

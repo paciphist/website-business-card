@@ -1,7 +1,8 @@
 import './App.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
-import { Suppliers } from './components/Suppliers';
+import { Partners } from './components/Partners';
+// import { Suppliers } from './components/Suppliers';
 import { Products } from './components/Products';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -13,7 +14,8 @@ function App() {
       <NavBar />
       <Banner />
       <Products />
-      <Suppliers />
+      {/* <Suppliers /> */}
+      <Partners />
       <Contact />
       <Footer />
     </div>

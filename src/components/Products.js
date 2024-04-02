@@ -8,10 +8,10 @@ import TrackVisibility from 'react-on-screen';
 
 export const Products = () => {
   return (
-    <section className="beers" id="beers">
+    <section className="products" id="products">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col size={12} className="products-col">
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -21,7 +21,7 @@ export const Products = () => {
                 >
                   <h2>Продукція</h2>
                   <h3>Наш асортимент</h3>
-                  <Tab.Container id="beers-tabs" defaultActiveKey="first">
+                  <Tab.Container id="products-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"

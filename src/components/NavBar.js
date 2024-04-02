@@ -52,7 +52,7 @@ export const NavBar = () => {
                 Головна
               </Nav.Link>
               <Nav.Link
-                href="#beers"
+                href="#products"
                 className={
                   activeLink === 'beers' ? 'active navbar-link' : 'navbar-link'
                 }
@@ -61,7 +61,7 @@ export const NavBar = () => {
                 Продукція
               </Nav.Link>
               <Nav.Link
-                href="#suppliers"
+                href="#partners"
                 className={
                   activeLink === 'suppliers'
                     ? 'active navbar-link'
