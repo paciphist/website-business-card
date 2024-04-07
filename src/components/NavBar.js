@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo1 from '../assets/img/logo1.svg';
-import telegram from '../assets/img/telegram.svg';
-import viber from '../assets/img/viber.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import crown from '../assets/img/icons/crown.png';
+import telegram from '../assets/img/icons/telegram.svg';
+import viber from '../assets/img/icons/viber.svg';
+import instagram from '../assets/img/icons/instagram.svg';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -34,8 +34,8 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
         <Container>
           <Navbar.Brand href="/">
-            BEERKING
-            <img className="navbar-logo" src={logo1} alt="logo" />
+            <img className="navbar-logo" src={crown} alt="logo" />
+            <h3>BEERKING</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -63,11 +63,11 @@ export const NavBar = () => {
               <Nav.Link
                 href="#partners"
                 className={
-                  activeLink === 'suppliers'
+                  activeLink === 'partners'
                     ? 'active navbar-link'
                     : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink('suppliers')}
+                onClick={() => onUpdateActiveLink('partners')}
               >
                 Наші партнери
               </Nav.Link>
@@ -94,12 +94,12 @@ export const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={navIcon3} alt="instagram" />
+                  <img src={instagram} alt="instagram" />
                 </a>
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Приєднатися</span>
+                  <span className="vvd-text">З'вязок</span>
                 </button>
               </HashLink>
             </span>

@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
   ArrowRightCircle,
@@ -6,63 +5,16 @@ import {
   Calendar2,
 } from 'react-bootstrap-icons';
 import barrelbeer from '../assets/img/barrel-beer.png';
-import fish from '../assets/img/fish.svg';
-import chips from '../assets/img/chips.svg';
-import popcorn from '../assets/img/popcorn.svg';
+import bannerIcon1 from '../assets/img/icons/banner-icon1.svg';
+import bannerIcon2 from '../assets/img/icons/banner-icon2.png';
+import bannerIcon3 from '../assets/img/icons/banner-icon3.png';
+import bannerIcon4 from '../assets/img/icons/banner-icon4.png';
+import bannerIcon5 from '../assets/img/icons/banner-icon5.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import logobeerking from '../assets/img/logo-beerking1.png';
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = ['Напої', 'Закуски', 'Вино'];
-  const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(
-      () => {
-        tick();
-      },
-      delta,
-      index
-    );
-
-    return () => {
-      clearInterval(ticker);
-    };
-  });
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
-    }
-  };
-
   return (
     <section className="banner" id="home">
       <Container>
@@ -76,45 +28,45 @@ export const Banner = () => {
                   }
                 >
                   <img className="logo-img" src={logobeerking} alt="logo" />
-                  <h1>
-                    {`Живе пиво `}
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[
-                      "Закуски", "Напої" "Вино"]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
-                  </h1>
                   <div>
+                    <p className="banner-text">
+                      {' '}
+                      Крамниця розливного живого крафтового пива, сидра, вина та
+                      лимонадів. Смаколики до напоїв, м'ясні, рибні, сирні,
+                      снеки.
+                    </p>
                     <ul>
                       <li>
-                        {' '}
-                        Крамниця розливного живого крафтового пива, сидра, вина
-                        та лимонадів. Смаколики до напоїв, м'ясні, рибні, сирні,
-                        снеки.
-                      </li>
-                      <li>
-                        <Row className="align-items-center">
-                          <Col xs={12} md={6} xl={7}>
-                            <img
-                              className="banner-icons"
-                              src={fish}
-                              alt="icon fish"
-                            />
-                            <img
-                              className="banner-icons"
-                              src={chips}
-                              alt="icon chips"
-                            />
-                            <img
-                              className="banner-icons"
-                              src={popcorn}
-                              alt="icon popcorn"
-                            />
-                          </Col>
-                        </Row>
+                        <img
+                          className="banner-icons"
+                          src={bannerIcon1}
+                          alt="icon a glass of beer"
+                        />
+                        <img
+                          className="banner-icons"
+                          src={bannerIcon3}
+                          alt="icon fish"
+                        />
+                        <img
+                          className="banner-icons"
+                          src={bannerIcon2}
+                          alt="icon cheese"
+                        />
+                        <img
+                          className="banner-icons"
+                          src={bannerIcon4}
+                          alt="icon peanut"
+                        />
+                        <img
+                          className="banner-icons"
+                          src={bannerIcon5}
+                          alt="icon popcorn"
+                        />
+                        <img
+                          className="banner-icons"
+                          src={bannerIcon1}
+                          alt="icon a glass of beer"
+                        />
                       </li>
                       <li>
                         <TelephoneFill

@@ -1,4 +1,7 @@
 import { Col } from 'react-bootstrap';
+import crown from '../assets/img/icons/crown.png';
+import glass from '../assets/img/icons/glass.png';
+import barley from '../assets/img/icons/barley.png';
 
 export const BeerCard = ({
   title,
@@ -18,6 +21,9 @@ export const BeerCard = ({
         <div className="beer-txtx">
           <h4>{title}</h4>
           <p className="beer-discr">{description}</p>
+          <img className="navbar-logo" src={crown} alt="glass of Beer" />
+          <img className="navbar-logo" src={glass} alt="logo" />
+          <img className="navbar-logo" src={barley} alt="logo" />
         </div>
       </div>
     </Col>

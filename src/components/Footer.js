@@ -1,9 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 // import { MailchimpForm } from './MailchimpForm';
-import logo1 from '../assets/img/logo1.svg';
-import telegram from '../assets/img/telegram.svg';
-import viber from '../assets/img/viber.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import crown from '../assets/img/icons/crown.png';
+import telegram from '../assets/img/icons/telegram.svg';
+import viber from '../assets/img/icons/viber.svg';
+import instagram from '../assets/img/icons/instagram.svg';
 
 export const Footer = () => {
   return (
@@ -12,11 +12,11 @@ export const Footer = () => {
         <Row className="align-items-center">
           {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
-            <span className="footer-logo-text">BEERKING</span>
-            <img className="navbar-logo" src={logo1} alt="logo" />
+            <img className="navbar-logo" src={crown} alt="logo" />
+            <h3>BEERKING</h3>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
+            <div className="footer-social-icon">
               <a
                 href="https://web.telegram.org/k/"
                 target="_blank"
@@ -37,7 +37,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={navIcon3} alt="instagram" />
+                <img src={instagram} alt="instagram" />
               </a>
             </div>
             <p> CopyRight 2024. All Rights Reserved</p>

@@ -1,14 +1,14 @@
-import beerImg1 from '../assets/img/ch-lager.png';
-import beerImg2 from '../assets/img/chblanc.png';
-import beerImg3 from '../assets/img/dunkel.png';
-import beerImg4 from '../assets/img/khmelevus.png';
-import beerImg5 from '../assets/img/khmelpivo.png';
-import beerImg6 from '../assets/img/umanpivo.png';
-import beerImg7 from '../assets/img/kronen.png';
-import beerImg8 from '../assets/img/pils.png';
-import beerImg9 from '../assets/img/satoshi.png';
-import beerImg10 from '../assets/img/rizdvyne.png';
-import beerImg11 from '../assets/img/sangushko.png';
+import beerImg1 from '../assets/img/products/ch-lager.png';
+import beerImg2 from '../assets/img/products/chblanc.png';
+import beerImg3 from '../assets/img/products/dunkel.png';
+import beerImg4 from '../assets/img/products/khmelevus.png';
+import beerImg5 from '../assets/img/products/khmelpivo.png';
+import beerImg6 from '../assets/img/products/umanpivo.png';
+import beerImg7 from '../assets/img/products/kronen.png';
+import beerImg8 from '../assets/img/products/pils.png';
+import beerImg9 from '../assets/img/products/satoshi.png';
+import beerImg10 from '../assets/img/products/rizdvyne.png';
+import beerImg11 from '../assets/img/products/sangushko.png';
 
 export const beers = [
   {
@@ -31,7 +31,7 @@ export const beers = [
   },
   {
     title: 'Хмельницьке',
-    beerTitle: 'Світле фільтроване непастеризоване',
+    beerTitle: 'Світле фільтроване',
     beerFactory: 'Виробник: м.Хмельницький, Хмельпиво',
     beerStrength: 'Міцність: 4,5%. Щільність: 12%.',
     description:
