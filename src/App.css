@@ -88,13 +88,13 @@ select:focus {
   }
 }
 
-p.success {
+/* p.success {
   color: green;
-}
+} */
 
-p.danger {
+/*p.danger {
   color: red;
-}
+}*/
 
 .App {
   text-align: center;
